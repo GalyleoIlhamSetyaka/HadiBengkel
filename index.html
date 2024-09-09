@@ -1,82 +1,106 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indochino - Penjahit Kustom</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Machine Repairing Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <nav>
-            <img src="logo.png" alt="Indochino Logo" class="logo">
-        </nav>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-blue-800 text-white p-6" id="home">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">HADI BENGKEL</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="hover:text-gray-300">Home</a></li>
+                    <li><a href="#layanan" class="hover:text-gray-300">Services</a></li>
+                    <li><a href="#tentang" class="hover:text-gray-300">About</a></li>
+                    <li><a href="#kontak" class="hover:text-gray-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="hero">
-            <div class="hero-content">
-                <h1>PENJAHIT SUDAH SIAP</h1>
-                <p>Pengalaman pakaian pria kustom terbaik kini tersedia di Pusat Chinook.</p>
-                <p>Kunjungi kami sebelum 30 April untuk berkesempatan memenangkan lemari pakaian yang sempurna.</p>
-                <button class="cta-button">BUAT JANJI TEMU</button>
+    <!-- Main Content -->
+    <main class="container mx-auto p-6">
+        <!-- Hero Section -->
+        <section class="bg-white p-8 rounded-lg shadow-lg mb-8" id="home">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold mb-4 text-gray-800">Professional Machine Repairing Service</h2>
+                    <p class="text-gray-600 mb-4">We provide top-notch machine repair services to ensure your equipment is running smoothly. Our expert technicians are ready to handle any repair job, big or small.</p>
+                    <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-600 transition duration-200">Learn More</a>
+                </div>
+                <div class="md:w-1/2 mt-6 md:mt-0">
+                    <img src="https://placehold.co/400x300" alt="Technician repairing a machine" class="rounded-lg shadow-lg">
+                </div>
             </div>
         </section>
 
-        <section id="made-to-measure">
-            <h2>PERBEDAAN DIBUAT UNTUK MENGUKUR</h2>
-            <p>Kami membuat jas dan kemeja yang disesuaikan dengan ukuran dan gaya pribadi Anda, dengan harga yang sangat baik.</p>
-            <button class="secondary-button">LIHAT JAS</button>
-        </section>
-
-        <section id="features">
-            <div class="feature">
-                <img src="ruler-icon.png" alt="Ruler Icon">
-                <h3>KUNJUNGI KAMI</h3>
-                <p>Buat janji dengan Penasehat Gaya. Kami akan mengambil ukuran Anda dan membantu Anda memilih opsi yang sesuai.</p>
-            </div>
-            <div class="feature">
-                <img src="fabric-icon.png" alt="Fabric Icon">
-                <h3>BUAT MILIK ANDA</h3>
-                <p>Pilih kain yang Anda suka dan kustomisasi yang Anda inginkan. Semuanya dari lapel hingga kancing dan jahitan.</p>
-            </div>
-            <div class="feature">
-                <img src="scissors-icon.png" alt="Scissors Icon">
-                <h3>SEMPURNAKAN POTONGAN</h3>
-                <p>Ketika pakaian Anda tiba dalam beberapa minggu, kembali ke showroom kami untuk penyesuaian akhir agar pakaian Anda benar-benar pas.</p>
+        <!-- Services Section -->
+        <section class="mb-8" id="layanan">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800 text-center">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Diagnostics</h3>
+                    <p class="text-gray-600 mb-4">We offer comprehensive diagnostics to identify and fix issues quickly and efficiently.</p>
+                    <a href="#" class="text-blue-500 hover:underline">Read More</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Maintenance</h3>
+                    <p class="text-gray-600 mb-4">Regular maintenance services to keep your machines in top condition.</p>
+                    <a href="#" class="text-blue-500 hover:underline">Read More</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Emergency Repairs</h3>
+                    <p class="text-gray-600 mb-4">24/7 emergency repair services to minimize downtime and get you back up and running.</p>
+                    <a href="#" class="text-blue-500 hover:underline">Read More</a>
+                </div>
             </div>
         </section>
 
-        <section id="location">
-            <h2>KUNJUNGI KAMI DI PUSAT CHINOOK</h2>
-            <p>Sen-Sab 9:30 - 21:00</p>
-            <p>Min 11:00 - 19:00</p>
-            <p>Di seberang Lululemon di lantai 1</p>
-            <p>Grand Opening pada 6 April</p>
-            <button class="cta-button">BUAT JANJI TEMU</button>
-        </section>
-
-        <section id="gallery">
-            <h2>#INDOCHINO</h2>
-            <div class="gallery-grid">
-                <!-- Tambahkan gambar-gambar di sini -->
+        <!-- About Us Section -->
+        <section class="bg-white p-8 rounded-lg shadow-lg mb-8" id="tentang">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800 text-center">About Us</h2>
+            <p class="text-gray-600 text-center mb-4">With over 20 years of experience, we are dedicated to providing high-quality machine repair services. Our team of expert technicians is committed to ensuring your satisfaction.</p>
+            <div class="flex justify-center">
+                <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-600 transition duration-200">Learn More</a>
             </div>
         </section>
 
-        <section id="testimonial">
-            <h2>INDOCHINO DI BERITA</h2>
-            <blockquote>
-                "Indochino: Jas Kustom Yang Terlalu Bagus Untuk Menjadi Benar Yang Sebenarnya Benar"
-            </blockquote>
-            <p>- Forbes</p>
-            <button class="cta-button">BUAT JANJI TEMU</button>
+        <!-- Contact Section -->
+        <section class="bg-white p-8 rounded-lg shadow-lg" id="kontak">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800 text-center">Contact Us</h2>
+            <form class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                    <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your name">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                    <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your email">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                    <textarea id="message" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg font-medium hover:bg-blue-600 transition duration-200">Send Message</button>
+            </form>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Indochino. Hak Cipta Dilindungi.</p>
-        <div class="social-icons">
-            <!-- Tambahkan ikon media sosial di sini -->
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white p-6 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Machine Repairing Service. All rights reserved.</p>
         </div>
     </footer>
 </body>

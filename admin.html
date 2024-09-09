@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Dashboard Admin -->
+<div>
+    <h1>Dashboard</h1>
+    <button onclick="logout()">Logout</button>
+    
+    <h2>Manage Services</h2>
+    <div id="services-list"></div>
+    
+    <h2>Manage Orders</h2>
+    <div id="orders-list"></div>
+  </div>
+  
+  <!-- Form untuk upload gambar dan menambahkan deskripsi -->
+<form id="upload-form">
+    <input type="file" id="image" required />
+    <textarea id="description" placeholder="Enter service description" required></textarea>
+    <button type="submit">Upload Image</button>
+  </form>
+<!-- Daftar gambar dan deskripsi yang sudah diunggah -->
+<div id="services-list"></div>
+  
+</body>
+</html>
