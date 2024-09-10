@@ -6,26 +6,34 @@
     <title>Register & Login</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <script type="module" src="auth.js"></script>
 </head>
 <body>
-  <div class="container" id="signIn">
+    <div class="container" id="signIn">
         <h1 class="form-title">Sign In</h1>
-        <form method="post" action="">
-          <div id="signInMessage" class="messageDiv" style="display:none;"></div>
 
-          <div class="input-group">
-              <i class="fas fa-envelope"></i>
-              <input type="email"  id="email" placeholder="Email" required>
-              <label for="email">Email</label>
-          </div>
-          <div class="input-group">
-              <i class="fas fa-lock"></i>
-            <input type="password" id="password"  placeholder="Password" required>
-              <label for="password">Password</label>
-          </div>
-         <button  class="btn"  id="submitSignIn">Sign In</button>
+        <!-- Pesan untuk feedback login -->
+        <div id="signInMessage" class="messageDiv" style="display:none;"></div>
+
+        <!-- Form Sign In -->
+        <form id="login-form">
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <!-- Input email -->
+                <input type="email" id="email" placeholder="Email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <!-- Input password -->
+                <input type="password" id="password" autocomplete="off" placeholder="Password" required>
+                <label for="password">Password</label>
+            </div>
+            <!-- Tombol login -->
+            <button type="button" class="btn" id="submitSignIn">Sign In</button>
         </form>
-      <script src="script.js"></script>
+    </div>
+
+    <!-- Hubungkan dengan file JavaScript auth.js -->
+    <script type="module" src="auth.js"></script>
 </body>
 </html>
