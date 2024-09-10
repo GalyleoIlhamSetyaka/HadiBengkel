@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>DASHBOARD ADMIN</h1>
+
+        <button id="logout" class="logout"> logout</button>
+    </div>
+
+    <div class="content">
+        <button id="addItemBtn" class="btn">TAMBAH ITEM</button>
+        <div id="itemContainer" class="item-container">
+            <!-- Item akan ditambahkan di sini secara dinamis -->
+        </div>
+    </div>
+    <!-- Loading Spinner -->
+    <div id="loading" style="display: none;">
+        <p>Loading...</p>
+    </div>
+
+    <!-- Modal untuk Tambah Item -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2>Tambah Item</h2>
+            <form id="addItemForm">
+                <label for="image">Upload Gambar:</label>
+                <input type="file" id="image" required><br><br>
+                <label for="description">Keterangan:</label>
+                <textarea id="description" required></textarea><br><br>
+                <button type="submit" class="btn">Tambah Item</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="admin.js"></script>
+</body>
+</html>
