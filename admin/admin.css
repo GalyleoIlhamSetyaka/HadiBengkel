@@ -11,16 +11,16 @@ body {
     text-align: center;
     color: white;
 }
-
-.logout{
-    background-color: #b83535;
+.btn-logout {
+    background-color: red;
     color: white;
     padding: 10px 20px;
-    margin: 20px 41%;
+    margin: 20px 0;
     border-radius: 20rem;
     cursor: pointer;
-    width: 20rem;
+    width: 100%;
 }
+
 
 .btn {
     background-color: #4CAF50;
