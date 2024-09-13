@@ -4,7 +4,14 @@
  import{getFirestore, setDoc, doc} from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js"
  
  const firebaseConfig = {
-
+    apiKey: "AIzaSyBRbKqEeEFTU82OtGXOwsFIxX8QnkPsuJ8",
+    authDomain: "hadibengkel-8abda.firebaseapp.com",
+    databaseURL: "https://hadibengkel-8abda-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "hadibengkel-8abda",
+    storageBucket: "hadibengkel-8abda.appspot.com",
+    messagingSenderId: "154359113405",
+    appId: "1:154359113405:web:0b525db35acca2665fb9d4",
+    measurementId: "G-BMLMM911YX"
  };
 
  // Initialize Firebase
