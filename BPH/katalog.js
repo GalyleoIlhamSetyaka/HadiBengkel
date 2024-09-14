@@ -44,7 +44,7 @@ function displayItem(id, itemData) {
     btn.innerText = "Beli Sekarang";
 
     // WhatsApp URL (Replace '1234567890' with the seller's phone number)
-    const phoneNumber = "089674515368"; // Replace this with actual phone number
+    const phoneNumber = ""; // Replace this with actual phone number
     const waMessage = `Apakah Mesin ini masih ada?`;
     const waUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(waMessage)}`;
 
